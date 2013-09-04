@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-"""Counting DNA Nucleotides
+"""Transcribing DNA into RNA
 
 Usage:
   DNA.py <input> [--compare]
