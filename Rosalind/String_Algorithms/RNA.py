@@ -11,7 +11,6 @@ Options:
   --compare       run a speed comparison of various methods
   -h --help       show this help message and exit
   -v --version    show version and exit
-
 """
 
 problem_description = """Transcribing DNA into RNA
