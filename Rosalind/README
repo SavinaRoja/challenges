@@ -1,0 +1,9 @@
+Rosalind is a platform for presenting code challenges that relate directly to 
+bioinformatics http://rosalind.info/about/
+
+As a biologist who loves computation, this is irresistable. As someone with
+some (and wanting to acquire more) experience in optimizing algorithms, I'll
+try to write fast, descriptive, implementations to the best of my ability.
+
+Rosalind problems are not numbered like Porject Euler, I may attempt to
+organize the scripts for this project according to topic, but that may change.
