@@ -1,0 +1,8 @@
+Project Euler is an excellent resource for learning about mathematics and
+programming. Read more about it on the website at http://projecteuler.net/
+
+I have explored solutions in both Python and C; and did some work with using C
+as an extension to Python. 
+
+Some code recipes have been made into the "pemaths" module, and the solutions
+may depend on it.
