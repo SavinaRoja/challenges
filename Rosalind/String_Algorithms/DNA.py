@@ -49,7 +49,7 @@ def get_string_from_dataset(inp_file):
     #1000 characters of the ACGT alphabet
     with open(inp_file, 'r') as inp:
         data_string = inp.readline()
-    return data_string
+    return data_string.strip()
 
 
 #I found this to be slowest
@@ -63,7 +63,7 @@ def counter_method(data):
 def iter_bin_method(data):
     """Simple implementation of string iteration and binning"""
     a, c, g, t = 0, 0, 0, 0
-    for char in data.strip():
+    for char in data:
         if char == 'A':
             a += 1
         elif char == 'C':
@@ -89,8 +89,7 @@ def main():
 
 def compare():
     """
-    This will seek to compare the collections.Counter datatype method to the
-    iter_bin_method
+    This will seek to compare the various solutions
     """
     data_string = get_string_from_dataset(arguments['<input>'])
 
