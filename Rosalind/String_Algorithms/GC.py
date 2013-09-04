@@ -4,8 +4,8 @@
 """Computing GC Content
 
 Usage:
-  DNA.py <input>
-  DNA.py (--help | --version)
+  GC.py <input>
+  GC.py (--help | --version)
 
 Options:
   -h --help       show this help message and exit

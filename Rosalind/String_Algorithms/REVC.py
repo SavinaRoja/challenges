@@ -4,8 +4,8 @@
 """Complementing a Strand of DNA
 
 Usage:
-  DNA.py <input>
-  DNA.py (--help | --version)
+  REVC.py <input>
+  REVC.py (--help | --version)
 
 Options:
   -h --help       show this help message and exit

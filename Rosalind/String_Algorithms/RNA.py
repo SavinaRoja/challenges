@@ -4,8 +4,8 @@
 """Transcribing DNA into RNA
 
 Usage:
-  DNA.py <input> [--compare]
-  DNA.py (--help | --version)
+  RNA.py <input> [--compare]
+  RNA.py (--help | --version)
 
 Options:
   --compare       run a speed comparison of various methods
