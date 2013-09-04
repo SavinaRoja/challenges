@@ -80,9 +80,11 @@ def parse(inp_file):
     sequences.append((current_title, seq))
     return sequences
 
+
 def calc_gc_percent(sequence):
     gc_frac = float(sequence.count('C') + sequence.count('G')) / len(sequence)
     return gc_frac * 100
+
 
 def main():
     sequences = parse(arguments['<input>'])
@@ -95,8 +97,6 @@ def main():
             max_gc_title = seq_title
     print(max_gc_title)
     print(max_gc_val)
-
-
 
 
 if __name__ == '__main__':
