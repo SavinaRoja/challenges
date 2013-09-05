@@ -4,10 +4,11 @@
 """Finding a Motif in DNA
 
 Usage:
-  SUBS.py <input>
+  SUBS.py <input> [--compare]
   SUBS.py (--help | --version)
 
 Options:
+  -c --compare    run a speed test to compare various methods
   -h --help       show this help message and exit
   -v --version    show version and exit
 """
@@ -52,16 +53,67 @@ in seemingly unusual index increments in the code.
 """
 
 from docopt import docopt
+from time import time
 
 
-def findallsubstrings(string, substring):
+def get_sequence_and_query(inp_file):
+    with open(inp_file, inp_file) as inp:
+        sequence = inp.readline().strip()
+        query = inp.readline().strip()
+        if len(query) > len(sequence):
+            raise ValueError('Query must be shorter than the searched sequence')
+        return sequence, query
+
+
+def findall(sequence, query):
+    '''A custom method that relies on string.find, used as a generator'''
+    offset = -1
+    while True:  # We'll break on the sentinel value of string.find()
+        offset = sequence.find(query, offset + 1)
+        if offset == -1:
+            break
+        else:
+            yield offset
+
+
+def find_by_startswith(sequence, query):
+    for offset in range(len(sequence)):
+        if sequence[offset:].startswith(query):
+            yield offset
 
 
 def main():
-    data_seq = get_string_from_dataset(arguments['<input>'])
-    print(reverse_complement(data_seq))
+    sequence, query = get_sequence_and_query(arguments['<input>'])
+    offsets = ''
+    for offset in findall(sequence, query):
+        offsets += str(offset + 1) + ' '
+    print(offsets)
+
+
+def compare():
+    """
+    This will seek to compare the various solutions
+    """
+    sequence, query = get_sequence_and_query(arguments['<input>'])
+
+    start = time()
+    for i in range(1000):
+        for x in findall(sequence, query):
+            pass
+    print('''It took the string.find iteration method {0} seconds to \
+complete 1000 repetitions\n'''.format(time() - start))
+
+    start = time()
+    for i in range(1000):
+        for x in find_by_startswith(sequence, query):
+            pass
+    print('''It took the find_by_startswith iteration method {0} seconds to \
+complete 1000 repetitions\n'''.format(time() - start))
 
 
 if __name__ == '__main__':
     arguments = docopt(__doc__, version='0.0.1')
-    main()
+    if arguments['--compare']:
+        compare()
+    else:
+        main()

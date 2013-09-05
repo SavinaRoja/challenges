@@ -60,16 +60,17 @@ Sample Output
 19
 """
 
-def get_k_n_from_input(inp_file):
+from docopt import docopt
+
+
+def get_n_k_from_input(inp_file):
     with open(inp_file, 'r') as inp:
         n, k = inp.readline().strip().split()
         return int(n), int(k)
 
-from docopt import docopt
 
-#This problem could be solved by recursion, but I'll implement a generator so as
-#to avoid any possible problems with recursion limits
 def modified_fibonacci(litter_pairs):
+    '''Implemented as generator, avoids recursion'''
     #The first generation: 1 pair
     a = 1
     yield a
@@ -80,6 +81,9 @@ def modified_fibonacci(litter_pairs):
     while True:
         a, b = b, a * litter_pairs + b
         yield b
+
+
+#TODO: Solve Binet's theorem with k parameter and implement
 
 
 def main(n, k):
