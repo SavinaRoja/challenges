@@ -72,6 +72,7 @@ def bio_seq_count_method(data):
     dna = Seq(data)
     return dna.count('A'), dna.count('C'), dna.count('G'), dna.count('T')
 
+
 def bio_seq_without_instantiation(dna):
     '''BioPython Seq counting, but accepts already instantiated Seq'''
     return dna.count('A'), dna.count('C'), dna.count('G'), dna.count('T')
