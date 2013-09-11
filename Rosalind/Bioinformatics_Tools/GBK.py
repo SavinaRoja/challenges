@@ -17,7 +17,9 @@ Options:
   -v --version    show version and exit
 """
 
-problem_description = """Problem
+problem_description = """GenBank Introduction
+
+Problem
 
 GenBank comprises several subdivisions:
 
