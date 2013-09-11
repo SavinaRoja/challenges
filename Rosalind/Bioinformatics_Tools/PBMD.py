@@ -8,8 +8,7 @@ Usage:
   DNA.py (--help | --version)
 
 Arguments:
-  <input>         A file containing three lines corresponding to genus, starting
-                  date, and ending date respectively.
+  <input>         A file containing two lines, author name first, year second.
   <email>         An email address for the submission of requests to Entrez.
 
 Options:
