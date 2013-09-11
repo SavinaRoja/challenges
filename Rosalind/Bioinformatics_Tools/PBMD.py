@@ -97,7 +97,7 @@ def get_abbrev_journal_name(full_journal_name):
 def get_earliest_record(records):
     '''
     Looks for the namedtuple(pmid, pubdate, abbrev_journal_name) in a list with
-    the following attributes, in order or priority:
+    the following attributes, in order of priority:
       Lowest PubDate
       Highest alphabetical Abbreviated Journal Name
       Smallest PMID
