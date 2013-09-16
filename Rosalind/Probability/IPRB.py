@@ -4,8 +4,8 @@
 """Mendel's First Law
 
 Usage:
-  DNA.py <input>
-  DNA.py (--help | --version)
+  IPRB.py <input>
+  IPRB.py (--help | --version)
 
 Options:
   -h --help       show this help message and exit
