@@ -102,8 +102,7 @@ def get_ORFs(rna):
     '''
     This function will attempt to translate the RNA to protein for all ORFs in
     the sequence as well as its reverse complement. Each translated sequence
-    will be returned along with its starting position, ending position, and
-    strand information.
+    will be returned along with its starting position and strand information.
 
     Returns: (protein_sequence, rna_start, rna_strand)
     '''
