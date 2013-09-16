@@ -60,7 +60,6 @@ Sample Output
 """
 
 from docopt import docopt
-from math import factorial
 
 
 def get_k_m_n(inp_file):
