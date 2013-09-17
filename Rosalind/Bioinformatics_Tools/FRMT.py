@@ -4,8 +4,8 @@
 """Data Formats
 
 Usage:
-  DNA.py <input> <email>
-  DNA.py (--help | --version)
+  FRMT.py <input> <email>
+  FRMT.py (--help | --version)
 
 Arguments:
   <input>         A file with space separated GenBank IDs on a single line.

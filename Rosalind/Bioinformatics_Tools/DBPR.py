@@ -4,8 +4,8 @@
 """Introduction to Protein Databases
 
 Usage:
-  DNA.py <input>
-  DNA.py (--help | --version)
+  DBPR.py <input>
+  DBPR.py (--help | --version)
 
 Options:
   --compare       run a speed comparison of various methods

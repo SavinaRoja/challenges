@@ -4,8 +4,8 @@
 """Introduction to the Bioinformatics Armory
 
 Usage:
-  DNA.py <input> [--compare]
-  DNA.py (--help | --version)
+  INI.py <input> [--compare]
+  INI.py (--help | --version)
 
 Options:
   --compare       run a speed comparison of various methods

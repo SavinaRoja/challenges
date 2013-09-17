@@ -4,8 +4,8 @@
 """GenBank Introduction
 
 Usage:
-  DNA.py <input> <email>
-  DNA.py (--help | --version)
+  GBK.py <input> <email>
+  GBK.py (--help | --version)
 
 Arguments:
   <input>         A file containing three lines corresponding to genus, starting

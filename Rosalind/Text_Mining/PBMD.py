@@ -4,8 +4,8 @@
 """PubMed Search
 
 Usage:
-  DNA.py <input> <email>
-  DNA.py (--help | --version)
+  PBMD.py <input> <email>
+  PBMD.py (--help | --version)
 
 Arguments:
   <input>         A file containing two lines, author name first, year second.

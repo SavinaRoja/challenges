@@ -4,8 +4,8 @@
 """Locating Restriction Sites
 
 Usage:
-  DNA.py <input> [--compare] [--max=MAX] [--min=MIN]
-  DNA.py (--help | --version)
+  REVP.py <input> [--compare] [--max=MAX] [--min=MIN]
+  REVP.py (--help | --version)
 
 Options:
   --compare       run a speed comparison of various methods

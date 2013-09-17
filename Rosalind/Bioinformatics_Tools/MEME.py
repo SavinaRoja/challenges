@@ -4,8 +4,8 @@
 """New Motif Discovery
 
 Usage:
-  DNA.py <input>
-  DNA.py (--help | --version)
+  MEME.py <input>
+  MEME.py (--help | --version)
 
 Options:
   -h --help       show this help message and exit

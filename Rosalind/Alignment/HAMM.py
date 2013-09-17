@@ -4,8 +4,8 @@
 """Counting Point Mutations
 
 Usage:
-  DNA.py <input>
-  DNA.py (--help | --version)
+  HAMM.py <input>
+  HAMM.py (--help | --version)
 
 Options:
   -h --help       show this help message and exit
